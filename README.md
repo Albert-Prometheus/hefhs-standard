@@ -95,15 +95,35 @@ hefhs-validator /path/to/project --json
 <!-- Framework Users: Shows compatibility with major Agentic AI frameworks -->
 ## For Framework Users
 
-| Framework | Map to HEFHS |
-|-----------|--------------|
-| OpenCode (Oh-My-OpenAgent) | `/agent/`, `/tool/`, `/memory/`, `/context/` (direct mapping) |
-| LangChain | `/langchain_modules/` → `/tool/` |
-| AutoGen | `/agent/` (direct mapping) |
-| CrewAI | `/crew/` → `/agent/` |
-| OpenManus | `/tool/` (direct mapping) |
-| Claude (Anthropic) | `/agent/`, `/tool/`, `/memory/` (direct mapping) |
-| Codex (OpenAI) | `/agent/`, `/tool/` (direct mapping) |
+> Based on OpenCode (Oh-My-OpenAgent) skills directory structure as the factual standard.
+
+| Framework | Recommended HEFHS Structure |
+|-----------|------------------------------|
+| **OpenCode (Oh-My-OpenAgent)** | `/agent/`, `/tool/`, `/skills/`, `/memory/`, `/context/` |
+| **LangChain** | `/tool/` or `/langchain_modules/` |
+| **AutoGen** | `/agent/` |
+| **CrewAI** | `/agent/` |
+| **OpenManus** | `/tool/` |
+| **Claude (Anthropic)** | `/agent/`, `/tool/` |
+| **Codex (OpenAI)** | `/agent/`, `/tool/` |
+
+### OpenCode Skills Directory Reference
+
+The OpenCode (Oh-My-OpenAgent) skills directory structure serves as the reference standard:
+
+```
+.skills/
+├── {skill_name}/           # Skill name (kebab-case)
+│   ├── SKILL.md           # Main skill definition (required)
+│   ├── LICENSE.txt        # License file (optional)
+│   ├── data/              # Data files
+│   ├── scripts/           # Utility scripts
+│   ├── references/        # Reference documentation
+│   ├── themes/            # Theme files
+│   ├── agents/            # Agent configurations
+│   ├── examples/          # Usage examples
+│   └── {language}/       # Language-specific (python/, typescript/, etc.)
+```
 
 See [EXAMPLES.md](EXAMPLES.md) for detailed mappings.
 

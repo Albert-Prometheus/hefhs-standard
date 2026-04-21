@@ -271,13 +271,35 @@ result = search_web("HEFHS standard", config)
 
 ### Existing Framework Mapping
 
-| Framework | HEFHS Structure | Notes |
-|-----------|----------------|-------|
-| **LangChain** | `/langchain_modules/` | Maps to `/tool/` |
+> OpenCode (Oh-My-OpenAgent) skills directory structure serves as the reference standard.
+
+| Framework | Recommended HEFHS Structure | Notes |
+|-----------|------------------------------|-------|
+| **OpenCode (Oh-My-OpenAgent)** | `/agent/`, `/tool/`, `/skills/`, `/memory/`, `/context/` | Direct mapping - reference standard |
+| **LangChain** | `/tool/` or `/langchain_modules/` | Maps to tool |
 | **AutoGen** | `/agent/` | Direct mapping |
-| **CrewAI** | `/crew/` | Maps to `/agent/` |
-| **OpenAI Assistants** | `/assistant/` | Cloud abstraction |
+| **CrewAI** | `/agent/` | Maps to agent |
 | **OpenManus** | `/tool/` | Direct mapping |
+| **Claude (Anthropic)** | `/agent/`, `/tool/` | Agent and tool |
+| **Codex (OpenAI)** | `/agent/`, `/tool/` | Agent and tool |
+
+### OpenCode Skills Directory Reference
+
+The OpenCode (Oh-My-OpenAgent) skills directory structure:
+
+```
+.skills/
+├── {skill_name}/           # Skill name (kebab-case)
+│   ├── SKILL.md           # Main skill definition (required)
+│   ├── LICENSE.txt        # License file (optional)
+│   ├── data/              # Data files
+│   ├── scripts/           # Utility scripts
+│   ├── references/        # Reference documentation
+│   ├── themes/           # Theme files
+│   ├── agents/           # Agent configurations
+│   ├── examples/         # Usage examples
+│   └── {language}/      # Language-specific (python/, typescript/, etc.)
+```
 
 ### Migration Strategy
 
