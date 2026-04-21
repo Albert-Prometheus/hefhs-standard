@@ -67,3 +67,6 @@ secrets.yaml
 .mypy_cache/
 .dmypy.json
 dmypy.json
+
+# Local promotional files (not for GitHub)
+PROMOTION_*.md
