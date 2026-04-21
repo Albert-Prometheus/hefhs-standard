@@ -1,6 +1,6 @@
 # AGENTS.md - HEFHS 數據湖庫專案
 
-## 語言原則
+## 自然語言原則
 
 - **輸出語言**：繁體中文
 - **思維鏈順序**：繁體中文 → 英文 → 簡體中文（补充推理用）
@@ -39,9 +39,10 @@ docker run -d --rm --name ferretdb --network data-lakehouse -p 37017:27017 -e PO
 
 ## 技術架構
 
-- **語言**：Python
+- **程式語言**：Python
 - **框架**：PySpark, Jupyter
 - **資料庫**：PostgreSQL, pgvector, FerretDB
+- **Harness Engineering & AI Agentic Coding**：OpenCode with Oh-My-OpenAgent Plug-in
 
 ## 待完成
 
