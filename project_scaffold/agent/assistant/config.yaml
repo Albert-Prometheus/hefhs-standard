@@ -1,0 +1,29 @@
+# Example Agent Configuration
+# Follows HEFHS standard
+
+agent_name: "assistant"
+model: "gpt-4"
+temperature: 0.7
+max_tokens: 4096
+
+# System prompt (inline or reference file)
+system_prompt: |
+    You are a helpful AI assistant.
+    Be concise and clear in your responses.
+
+# Tools this agent can use
+tools:
+  - web_search
+  - document_loader
+
+# Memory configuration
+memory:
+  type: "working"
+  max_history: 10
+  context_window: 5
+
+# Execution settings
+execution:
+  timeout: 30
+  max_iterations: 10
+  allow_parallel: false

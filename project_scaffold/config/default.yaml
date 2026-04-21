@@ -1,0 +1,154 @@
+# HEFHS Default Configuration
+# Follows HEFHS standard structure
+
+project:
+  name: "hefhs_project"
+  version: "1.0.0"
+  hefhs_version: "1.0.0"
+
+# Agent Configuration
+agent:
+  default_model: "gpt-4"
+  default_temperature: 0.7
+  max_tokens: 4096
+  timeout: 30
+
+  # Default system prompt
+  system_prompt_template: "You are a helpful AI assistant."
+
+  # Tools authorized by default
+  allowed_tools: []
+
+  # Memory settings
+  memory:
+    type: "ephemeral"  # ephemeral, working, persistent, vector
+    max_history: 10
+    context_window: 5
+
+# Tool Configuration
+tool:
+  # Registry enabled by default
+  auto_register: true
+
+  # Tool execution settings
+  execution:
+    timeout: 30
+    retry_attempts: 3
+    retry_delay: 1
+
+# Memory Configuration
+memory:
+  # Default storage backend
+  backend: "ephemeral"  # memory, vector, database
+
+  # Ephemeral memory (session-scoped)
+  ephemeral:
+    enabled: true
+    max_items: 100
+
+  # Working memory (task-scoped)
+  working:
+    enabled: true
+    max_items: 50
+
+  # Persistent memory (user-scoped)
+  persistent:
+    enabled: false
+    storage_path: "memory/persistent"
+
+  # Vector memory (semantic search)
+  vector:
+    enabled: false
+    provider: "pgvector"
+    dimension: 1536
+    connection: "${DATABASE_URL}"
+
+# Context Configuration
+context:
+  # Context management
+  max_contexts: 10
+  auto_save: true
+  auto_compress: true
+
+  # Compression settings
+  compression:
+    enabled: true
+    threshold: 8000
+    strategy: "truncate"  # truncate, summarize
+
+# State Management
+state:
+  # State persistence
+  persistence:
+    enabled: false
+    storage_path: "state"
+
+  # Workflow state
+  workflow:
+    track_progress: true
+    save_checkpoints: true
+
+# Workspace Configuration
+workspace:
+  # Temporary workspace
+  temp_dir: "workspace/temp"
+  cleanup_on_exit: true
+
+  # Working directory
+  work_dir: "workspace/work"
+
+  # Output directory
+  output_dir: "workspace/output"
+
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+  # File logging
+  file:
+    enabled: false
+    path: "var/log/agent.log"
+    max_bytes: 10485760  # 10MB
+    backup_count: 5
+
+  # Console logging
+  console:
+    enabled: true
+    colored: true
+
+# Monitoring & Metrics
+monitoring:
+  enabled: false
+
+  # Metrics endpoint
+  metrics:
+    enabled: false
+    port: 9090
+    path: "/metrics"
+
+  # Tracing
+  tracing:
+    enabled: false
+    endpoint: "${TRACING_ENDPOINT}"
+
+# Security Configuration
+security:
+  # Authentication
+  require_auth: false
+
+  # API keys
+  api_keys:
+    required: false
+    rotation_days: 90
+
+  # Rate limiting
+  rate_limit:
+    enabled: false
+    requests_per_minute: 60
+    burst: 10
+
+  # Secrets management
+  secrets:
+    backend: "env"  # env, vault, encrypted_file
+    env_prefix: "HEFHS_"
