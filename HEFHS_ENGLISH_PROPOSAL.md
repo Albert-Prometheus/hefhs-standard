@@ -20,17 +20,11 @@ Inspired by Linux FHS and Python PEP 8, aiming to establish a community-driven s
 
 ### Design Principles
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  FHS (Linux)          │  PEP 8 (Python)   │  HEFHS (Proposed)│
-├─────────────────────────────────────────────────────────────┤
-│  /usr, /etc, /var     │  snake_case       │  /agent, /tool   │
-│  clear directory      │  readable names  │  semantic       │
-│  responsibility     │  style          │  structure      │
-│  predictable        │  consistency   │  predictable   │
-│  locations          │  & readability  │  naming        │
-└─────────────────────────────────────────────────────────────┘
-```
+| Linux FHS | PEP 8 (Python) | HEFHS |
+|----------|---------------|-------|
+| `/usr`, `/etc`, `/var` | `snake_case` | `/agent`, `/tool`, `/memory`, `/context` |
+| Clear directory responsibility | Readable naming style | Semantic structure |
+| Predictable locations | Style consistency & readability | Portable conventions |
 
 ### Core Values
 

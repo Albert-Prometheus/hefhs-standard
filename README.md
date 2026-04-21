@@ -1,5 +1,6 @@
 # HEFHS: Harness Engineering Filesystem Hierarchy Standard
 
+<!-- Badges: License, Version, GitHub link -->
 <p align="center">
   <a href="https://github.com/Albert-Prometheus/hefhs-standard">
     <img src="https://img.shields.io/badge/github-hefhs--standard-blue?style=flat&logo=github" alt="GitHub">
@@ -14,6 +15,8 @@
 
 > A community-driven standard for organizing Agentic AI projects, inspired by Linux FHS and Python PEP 8.
 
+<!-- Quick Summary: What HEFHS provides and why it matters -->
+
 ## What is HEFHS?
 
 **HEFHS** (Harness Engineering Filesystem Hierarchy Standard) provides a consistent directory structure and naming conventions for Agentic AI projects. It helps teams:
@@ -23,6 +26,7 @@
 - **Readability** - Naming is self-documenting
 - **Consistency** - Shared language across teams
 
+<!-- Design Philosophy: Explains the two main inspirations (Linux FHS + PEP 8) -->
 ## Design Philosophy
 
 | Linux FHS | PEP 8 (Python) | HEFHS |
@@ -37,6 +41,7 @@
 - **Readability** - Naming is documentation
 - **Consistency** - Shared team language
 
+<!-- Quick Start: Minimal example to get users up and running quickly -->
 ## Quick Start
 
 ### Directory Structure
@@ -67,6 +72,7 @@ edit config/default.yaml
 python ../hefhs_validator.py .
 ```
 
+<!-- Installation: How to install the HEFHS validator tool -->
 ## Installation
 
 ```bash
@@ -86,6 +92,7 @@ hefhs-validator /path/to/project --fix
 hefhs-validator /path/to/project --json
 ```
 
+<!-- Framework Users: Shows compatibility with major Agentic AI frameworks -->
 ## For Framework Users
 
 | Framework | Map to HEFHS |
@@ -100,6 +107,7 @@ hefhs-validator /path/to/project --json
 
 See [EXAMPLES.md](EXAMPLES.md) for detailed mappings.
 
+<!-- Why Standardize: Demonstrates the problem HEFHS solves (before/after comparison) -->
 ## Why Standardize?
 
 ### Before HEFHS
@@ -155,6 +163,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Licensed under [Apache License 2.0](LICENSE).
 
+<!-- SimilarEfforts: References to related standards that inspired HEFHS -->
 ## SimilarEfforts
 
 - [Linux FHS](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html) - Filesystem Hierarchy Standard

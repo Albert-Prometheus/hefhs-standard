@@ -1,7 +1,9 @@
 # Contributing to HEFHS Standard
 
+<!-- Introduction: Welcome message and brief overview -->
 Thank you for your interest in contributing to the HEFHS (Harness Engineering Filesystem Hierarchy Standard) initiative.
 
+<!-- Vision: Explains the goal and scope of HEFHS -->
 ## HEFHS Vision
 
 HEFHS aims to establish a community-driven standard for:
@@ -9,6 +11,7 @@ HEFHS aims to establish a community-driven standard for:
 - Naming conventions for variables, classes, and resources
 - Cross-framework consistency across different Agent frameworks
 
+<!-- Ways to Contribute: Three main channels for participation -->
 ## Ways to Contribute
 
 ### 1. Proposing Changes
@@ -34,6 +37,7 @@ Help build the HEFHS ecosystem:
 - IDE plugins
 - Documentation improvements
 
+<!-- Getting Started: Prerequisites and basic setup steps -->
 ## Getting Started
 
 ### Setting Up Your Environment
@@ -48,6 +52,7 @@ ls -la
 cat HEFHS.md
 ```
 
+<!-- Validating Your Project: Using the CLI validator -->
 ### Validating Your Project
 
 ```bash
