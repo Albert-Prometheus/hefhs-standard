@@ -95,6 +95,8 @@ hefhs-validator /path/to/project --json
 | AutoGen | `/agent/` (direct mapping) |
 | CrewAI | `/crew/` → `/agent/` |
 | OpenManus | `/tool/` (direct mapping) |
+| Claude (Anthropic) | `/agent/`, `/tool/`, `/memory/` (direct mapping) |
+| Codex (OpenAI) | `/agent/`, `/tool/` (direct mapping) |
 
 See [EXAMPLES.md](EXAMPLES.md) for detailed mappings.
 
