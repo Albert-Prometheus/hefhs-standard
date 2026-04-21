@@ -25,16 +25,17 @@
 
 ## Design Philosophy
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  FHS (Linux)          │  PEP 8 (Python)   │  HEFHS     │
-├─────────────────────────────────────────────────────────────┤
-│  /usr, /etc, /var     │  snake_case       │  /agent    │
-│  clear directory      │  readable names  │  /tool     │
-│  responsibility     │  style          │  /memory   │
-│  predictable        │  consistency   │  /context  │
-└─────────────────────────────────────────────────────────────┘
-```
+| Linux FHS | PEP 8 (Python) | HEFHS |
+|----------|---------------|-------|
+| `/usr`, `/etc`, `/var` | `snake_case` | `/agent`, `/tool`, `/memory`, `/context` |
+| Clear directory responsibility | Readable naming style | Semantic structure |
+| Predictable locations | Style consistency | Portable conventions |
+
+**Core Values:**
+- **Discoverability** - File location is predictable
+- **Portability** - Cross-framework compatibility
+- **Readability** - Naming is documentation
+- **Consistency** - Shared team language
 
 ## Quick Start
 
