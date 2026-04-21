@@ -3,7 +3,7 @@
 <!-- Badges: License, Version, GitHub link -->
 <p align="center">
   <a href="https://github.com/Albert-Prometheus/hefhs-standard">
-    <img src="https://img.shields.io/badge/github-hefhs--standard-blue?style=flat&logo=github" alt="GitHub">
+    <img src="https://img.shields.io/badge/github-Albert--Prometheus-hefhs--standard-blue?style=flat&logo=github" alt="GitHub">
   </a>
   <a href="https://github.com/Albert-Prometheus/hefhs-standard/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-Apache%202.0-green?style=flat" alt="License">
@@ -164,11 +164,13 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md).
 Licensed under [Apache License 2.0](LICENSE).
 
 <!-- SimilarEfforts: References to related standards that inspired HEFHS -->
-## SimilarEfforts
+## Similar Efforts
 
 - [Linux FHS](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html) - Filesystem Hierarchy Standard
 - [PEP 8](https://peps.python.org/pep-0008/) - Python Style Guide
 - [MCP Specification](https://spec.modelcontextprotocol.io/) - Model Context Protocol
+
+> Note: External links are periodically reviewed. If you find broken links, please open an Issue.
 
 ---
 

@@ -384,14 +384,16 @@ cat HEFHS.md
 
 ### B. References
 
-- [Linux FHS](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)
-- [PEP 8](https://peps.python.org/pep-0008/)
-- [MCP Specification](https://spec.modelcontextprotocol.io/)
+- [Linux FHS](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html) - Filesystem Hierarchy Standard
+- [PEP 8](https://peps.python.org/pep-0008/) - Python Style Guide
+- [MCP Specification](https://spec.modelcontextprotocol.io/) - Model Context Protocol
 
 ### C. Similar Efforts
 
-- [Structurer](https://github.com/structurer) - Project structure validator
-- [Best-of.py](https://github.com/ml-tooling/best-of-python) - Python project conventions
+> Note: These projects may have evolved. Please verify current status before referencing.
+
+- [Project Template Standards](https://github.com/topics/project-template) - Various project template standards on GitHub
+- [Awesome Python](https://github.com/vinta/awesome-python) - Curated Python lists
 
 ---
 
@@ -399,11 +401,11 @@ cat HEFHS.md
 
 ---
 
-**Repository**: https://github.com/hefhs/hefhs-standard
+**Repository**: https://github.com/Albert-Prometheus/hefhs-standard
 
-**Discussion**: https://github.com/hefhs/hefhs-standard/issues
+**Discussion**: https://github.com/Albert-Prometheus/hefhs-standard/discussions
 
-**License**: MIT
+**License**: Apache 2.0
 
 ---
 
