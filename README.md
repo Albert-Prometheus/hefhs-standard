@@ -90,6 +90,7 @@ hefhs-validator /path/to/project --json
 
 | Framework | Map to HEFHS |
 |-----------|--------------|
+| OpenCode (Oh-My-OpenAgent) | `/agent/`, `/tool/`, `/memory/`, `/context/` (direct mapping) |
 | LangChain | `/langchain_modules/` → `/tool/` |
 | AutoGen | `/agent/` (direct mapping) |
 | CrewAI | `/crew/` → `/agent/` |
